@@ -10,8 +10,6 @@ namespace Snake
 
             //Console.SetBufferSize(80, 20);
 
-            Point p2 = new Point(4, 5, '#');
-
             HorizontalLine upLine = new HorizontalLine(0, 100, 0, '+');
             HorizontalLine downLine = new HorizontalLine(0, 100, 40, '+');
             VerticallLine leftLine = new VerticallLine(0, 0, 40, '+');
@@ -21,7 +19,10 @@ namespace Snake
             downLine.Draw();
             leftLine.Draw();
             rightLine.Draw();
-            p2.Draw();
+
+            Point p2 = new Point(40, 5, '#');
+            Snake snake = new Snake(p2, 5, Direction.LEFT);
+            snake.Draw();
 
             Console.ReadLine();
         }
