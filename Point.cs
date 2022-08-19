@@ -38,11 +38,11 @@ namespace Snake
             }
             else if(direction == Direction.UP)
             {
-                y = y + offset;
+                y = y - offset;
             }
             else if (direction == Direction.DOWN)
             {
-                y = y - offset;
+                y = y + offset;
             }
         }
 
@@ -55,6 +55,12 @@ namespace Snake
         public override string ToString()
         {
             return x + ", " + y + ", " + sim;
+        }
+
+        public void Clear()
+        {
+            sim = ' ';
+            Draw();
         }
     }
 }

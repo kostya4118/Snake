@@ -1,18 +1,18 @@
 ﻿<Properties StartupConfiguration="{91C243B8-6E7D-4A87-A30B-5375D8D86646}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Snake PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Snake PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="18" Column="60" />
-      <File FileName="Point.cs" Line="19" Column="24" />
-      <File FileName="HorizontalLine.cs" Line="17" Column="1" />
+      <File FileName="Program.cs" Line="23" Column="36" />
+      <File FileName="Point.cs" Line="9" Column="1" />
       <File FileName="Figure.cs" Line="6" Column="17" />
-      <File FileName="VerticalLine.cs" Line="17" Column="1" />
+      <File FileName="Snake.cs" Line="10" Column="39" />
+      <File FileName="Direction.cs" Line="6" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

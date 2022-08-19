@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace Snake
 {
@@ -20,11 +21,23 @@ namespace Snake
             leftLine.Draw();
             rightLine.Draw();
 
-            Point p2 = new Point(40, 5, '#');
-            Snake snake = new Snake(p2, 5, Direction.LEFT);
+            Point p2 = new Point(40, 15, '#');
+            Snake snake = new Snake(p2, 5, Direction.UP);
             snake.Draw();
 
-            Console.ReadLine();
+            while(true)
+            {
+                if(Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    snake.HeadleKey(key.Key);
+                }
+                Thread.Sleep(500);
+                snake.Move();
+            }
+
+
+            //Console.ReadLine();
         }
 
     }
